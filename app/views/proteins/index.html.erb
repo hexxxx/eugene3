@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Protein Data</h1>
+  </div>
+</div>
+<!-- I believe this is CSS from twitter's Bootstrap -->
+
+<div class="row">
+  <div class="col-md-12">
+    <%= link_to "Add Protein", new_protein_path %>
+    <!-- I believe this links to the new.html.erb view -->
+    <hr />
+
+    <table class="table table-bordered">
+      <thread>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>GI Number</th>
+          <th>Weight</th>
+          <th>Iso Point</th>
+          <th>Created</th>
+          <th>Updated</th>
+        </tr>
+      </thread>
+      <tbody>
+      <% @protein.each do |protein| %>
+        <tr>
+          <td><%= protein.id %></td>
+          <td><%= link_to protein.name, protein_path(protein.name) %></td>
+          <td><%= protein.gi_number %></td>
+          <td><%= protein.weight %></td>
+          <td><%= protein.iso %></td>
+          <td></td>
+          <td></td>
+        </tr>
+      <% end %>
+      <!-- this ends the ruby portion of the code -->
+      </tbody>
+    </table>
+  </div>
+</div>

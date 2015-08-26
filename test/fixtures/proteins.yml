@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gi_number: MyString
+  sequence: MyString
+  weight: MyString
+  iso: MyString
+
+two:
+  name: MyString
+  gi_number: MyString
+  sequence: MyString
+  weight: MyString
+  iso: MyString

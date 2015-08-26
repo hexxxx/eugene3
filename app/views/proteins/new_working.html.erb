@@ -1,0 +1,11 @@
+<!-- need to create a form for updating and adding protein -->
+
+<div class="row">
+  <div class="col-md-12">
+    <%= simple_form_for @protein, html: { class: "form-horizontal" } do |form| %>
+      <%= form.input :sequence %>
+      <%= form.submit class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
